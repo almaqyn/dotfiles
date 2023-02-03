@@ -1,0 +1,29 @@
+[user]
+	email = <146783027+almaqyn@users.noreply.github.com>
+	name = Darkhan Almaqyn
+
+[color]
+	ui = auto
+	diff = auto
+	grep = auto
+	status = auto
+	branch = auto
+	interactive = auto
+
+[core]
+	pager = less -FMRiX
+	ignorecase = false
+
+[push]
+	default = upstream
+
+[alias]
+	unstage = reset HEAD --
+	olog = log --oneline --abbrev-commit --decorate --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %C(cyan)%ce%Creset %C(green)(%cr)%Creset' --date=relative
+	glog = log --graph --abbrev-commit --decorate --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %C(cyan)%ce%Creset %C(green)(%cr)%Creset' --date=relative
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)%an <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+	lc = log ORIG_HEAD.. --stat --no-merges
+
+[commit]
+	template = ~/.gittemplate
+
