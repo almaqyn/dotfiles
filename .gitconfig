@@ -27,3 +27,5 @@
 [commit]
 	template = ~/.gittemplate
 
+[init]
+	defaultBranch = main

@@ -19,9 +19,20 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
 export VISUAL=vim
 export EDITOR=vim
 
+export JAVA_HOME=/snap/openjdk/current/jdk
+export BOOST_ROOT=$HOME/.local/lib/boost
+export FLUTTER_ROOT=$HOME/tools/flutter
+export ANDROID_HOME=$HOME/tools/android/sdk
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export CHROME_EXECUTABLE=/snap/bin/chromium
+
 # PATH
 pathmunge $HOME/.local/bin
-pathmunge $HOME/.cargo/bin after
+pathmunge $HOME/.cargo/bin
+pathmunge $HOME/tools/flutter/bin
+pathmunge $JAVA_HOME/bin
+pathmunge $ANDROID_HOME/cmdline-tools/latest/bin
+pathmunge $ANDROID_HOME/platform-tools
 
 unset -f pathmunge
 
