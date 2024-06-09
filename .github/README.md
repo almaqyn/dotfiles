@@ -8,7 +8,7 @@ This is a repository that contains my dotfiles.
 ```
 export GIT_DIR=$HOME/.dotfiles.git &&
 export GIT_WORK_TREE=$HOME &&
-git clone --bare --branch linux git@github.com:almaqyn/dotfiles.git $GIT_DIR &&
+git clone --bare --branch linux https://github.com/almaqyn/dotfiles.git $GIT_DIR &&
 git config --local status.showUntrackedFiles no &&
 git stash push -m "Overridden dotfiles" &&
 unset GIT_DIR &&
@@ -20,7 +20,7 @@ unset GIT_WORK_TREE
 ```
 export GIT_DIR=$HOME/.dotfiles.git &&
 export GIT_WORK_TREE=$HOME &&
-git clone --bare --branch minimal git@github.com:almaqyn/dotfiles.git $GIT_DIR &&
+git clone --bare --branch minimal https://github.com/almaqyn/dotfiles.git $GIT_DIR &&
 git config --local status.showUntrackedFiles no &&
 git stash push -m "Overridden dotfiles" &&
 unset GIT_DIR &&
