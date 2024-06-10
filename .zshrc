@@ -100,3 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # Initialize fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Load Angular CLI autocompletion.
+[ -f ~/.angular-completions.zsh ] && source ~/.angular-completions.zsh
+
