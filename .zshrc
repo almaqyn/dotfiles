@@ -49,6 +49,9 @@ zstyle :omz:plugins:ssh-agent lazy yes
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
 COMPLETION_WAITING_DOTS="true"
 
+# fzf path
+FZF_BASE="$HOME/tools/fzf"
+
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
@@ -70,7 +73,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode ssh-agent)
+plugins=(git vi-mode ssh-agent fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,9 +102,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Initialize fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Load Angular CLI autocompletion.
 [ -f ~/.angular-completions.zsh ] && source ~/.angular-completions.zsh
