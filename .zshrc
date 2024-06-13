@@ -10,11 +10,8 @@ zstyle :omz:plugins:ssh-agent lazy yes
 # Display red dots whilst waiting for completion
 COMPLETION_WAITING_DOTS="true"
 
-# fzf path
-FZF_BASE="$HOME/tools/fzf"
-
 # oh-my-zsh plugins to enable
-plugins=(git vi-mode ssh-agent fzf)
+plugins=(git vi-mode ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -24,6 +21,9 @@ source $ZSH/oh-my-zsh.sh
 #                     #
 #######################
 
-# Load Angular CLI autocompletion.
+# Load Angular CLI autocompletion
 [ -f ~/.angular-completions.zsh ] && source ~/.angular-completions.zsh
+
+# Enable fzf autocompletion
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
