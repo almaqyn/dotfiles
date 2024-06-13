@@ -20,7 +20,7 @@ export VISUAL=vim
 export EDITOR=vim
 
 export JAVA_HOME=/snap/openjdk/current/jdk
-export BOOST_ROOT=$HOME/tools/boost
+export BOOST_ROOT=$HOME/libs/boost
 export FLUTTER_ROOT=$HOME/tools/flutter
 export ANDROID_HOME=$HOME/tools/android/sdk
 export ANDROID_SDK_ROOT=$ANDROID_HOME
