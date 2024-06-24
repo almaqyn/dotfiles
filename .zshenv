@@ -14,6 +14,8 @@ pathmunge()
 alias jf='wd'
 alias nv='nvim'
 alias xclip='xclip -sel clip'
+alias pbcopy='xclip -i'
+alias pbpaste='xclip -o'
 alias rm='echo "Please use trash-cli instead!"; false'
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
 

@@ -11,7 +11,7 @@ zstyle :omz:plugins:ssh-agent lazy yes
 COMPLETION_WAITING_DOTS="true"
 
 # oh-my-zsh plugins to enable
-plugins=(git vi-mode ssh-agent eza pipenv wd)
+plugins=(eza pipenv ssh-agent vi-mode wd)
 
 source $ZSH/oh-my-zsh.sh
 
