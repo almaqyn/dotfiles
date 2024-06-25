@@ -22,9 +22,7 @@ source $ZSH/oh-my-zsh.sh
 #######################
 
 pathgrep() {
-    echo $PATH | tr ":" "\n" | uniq | while read line; do
-        fd -g $1 $line
-    done
+    echo $PATH | tr ":" "\n" | uniq | xargs fd $@ 2> /dev/null
 }
 
 # Load Angular CLI autocompletion
