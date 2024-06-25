@@ -1,7 +1,7 @@
 # usage: pathmunge $path [after]
 pathmunge()
 {
-    if ! echo $PATH | /bin/grep -qE "(^|:)$1($|:)" ; then
+    if ! echo $PATH | grep -qE "(^|:)$1($|:)" ; then
         if [ "$2" = "after" ] ; then
             PATH=$PATH:$1
         else
@@ -14,6 +14,7 @@ pathmunge()
 alias jf='wd'
 alias nv='nvim'
 alias eza='eza --group-directories-first'
+alias path='echo $PATH | tr ":" "\n"'
 alias xclip='xclip -sel clip'
 alias pbcopy='xclip -i'
 alias pbpaste='xclip -o'
