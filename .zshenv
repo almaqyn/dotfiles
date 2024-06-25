@@ -14,7 +14,7 @@ pathmunge()
 alias jf='wd'
 alias nv='nvim'
 alias eza='eza --group-directories-first'
-alias path='echo $PATH | tr ":" "\n"'
+alias path='echo $PATH | tr ":" "\n" | uniq'
 alias xclip='xclip -sel clip'
 alias pbcopy='xclip -i'
 alias pbpaste='xclip -o'

@@ -22,7 +22,7 @@ source $ZSH/oh-my-zsh.sh
 #######################
 
 pathgrep() {
-    echo $PATH | tr ":" "\n" | while read line; do
+    echo $PATH | tr ":" "\n" | uniq | while read line; do
         fd -g $1 $line
     done
 }
