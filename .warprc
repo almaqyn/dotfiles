@@ -3,5 +3,9 @@ docs:~/userdirs/documents
 down:~/userdirs/downloads
 h:~
 jhaz:~/workspace/projects/jhaz
+learning:~/workspace/learning
 l:~/.local
+projects:~/workspace/projects
 r:/
+sandbox:~/workspace/sandbox
+w:~/workspace

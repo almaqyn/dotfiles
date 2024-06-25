@@ -13,6 +13,7 @@ pathmunge()
 # aliases
 alias jf='wd'
 alias nv='nvim'
+alias eza='eza --group-directories-first'
 alias xclip='xclip -sel clip'
 alias pbcopy='xclip -i'
 alias pbpaste='xclip -o'
@@ -44,17 +45,17 @@ export FZF_DEFAULT_OPTS="\
   --height=80% \
   --border=none \
   --info=inline \
-  --preview='if [ -d {} ]; then tree -C -L 2 {}; elif [ -f {} ]; then bat -f --style=numbers {}; fi' \
+  --preview='if [ -d {} ]; then eza --color always -T -L 2 {}; elif [ -f {} ]; then bat -f --style=numbers {}; fi' \
   --preview-window='right:60%:wrap,<50(bottom,50%)' \
   --history='$HOME/.fzf_history' --history-size=50 \
-  --bind='f3:execute(bat --style=numbers {} || less -f {})' \
+  --bind='f3:execute(if [ -f {} ]; then bat --style=numbers {} || less -f {}; fi)'
   --bind='f4:execute($EDITOR {})' \
   --bind='alt-w:toggle-preview-wrap' \
   --bind='ctrl-d:half-page-down' \
   --bind='ctrl-u:half-page-up' \
   --bind='ctrl-x:execute(rm -i {+})+abort' \
   --bind='ctrl-l:clear-query+first' \
-  --bind='ctrl-y:execute-silent(echo {+} | xclip)+abort' \
+  --bind='ctrl-y:execute-silent(echo {+} | pbcopy)+abort' \
   --bind='ctrl-\:change-preview-window(hidden|bottom,50%|right:60%)'"
 
 #export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -66,7 +67,7 @@ export FZF_CTRL_R_OPTS=" \
   --preview='echo {2..}' \
   --preview-window='bottom:3:wrap:border-top,<50(bottom:3:wrap:border-top)' \
   --bind='change:first' \
-  --bind='ctrl-y:execute-silent(echo -n {2..} | xclip)+abort'"
+  --bind='ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'"
 
 export FZF_ALT_C_COMMAND="${FD_TOOL} ${FD_OPTIONS} --type d"
 
