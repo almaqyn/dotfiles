@@ -21,6 +21,12 @@ source $ZSH/oh-my-zsh.sh
 #                     #
 #######################
 
+pathgrep() {
+    echo $PATH | tr ":" "\n" | while read line; do
+        fd -g $1 $line
+    done
+}
+
 # Load Angular CLI autocompletion
 [ -f ~/.angular-completions.zsh ] && source ~/.angular-completions.zsh
 
