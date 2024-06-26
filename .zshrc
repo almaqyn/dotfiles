@@ -25,6 +25,10 @@ pathgrep() {
     echo $PATH | tr ":" "\n" | uniq | xargs fd $@ 2> /dev/null
 }
 
+help() {
+    $@ --help | $PAGER
+}
+
 # Load Angular CLI autocompletion
 [ -f ~/.angular-completions.zsh ] && source ~/.angular-completions.zsh
 
