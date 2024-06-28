@@ -35,3 +35,6 @@ help() {
 # Enable fzf autocompletion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Load RVM into a shell session *as a function*
+[ -f "$HOME/.rvm/scripts/rvm" ] && source "$HOME/.rvm/scripts/rvm"
+
