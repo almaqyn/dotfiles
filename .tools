@@ -1,0 +1,42 @@
+apt:
+  - bear
+  - clang
+  - cmake
+  - cpu-checker
+  - moreutils
+  - ninja-build
+  - tmux
+  - xclip
+
+snap:
+  - code
+  - keepassxc
+  - node
+  - openjdk
+
+pipx:
+  - pipenv
+  - ranger-fm
+  - trash-cli
+
+npm:
+  - @angular/cli
+  - @vue/cli
+  - bun
+  - http-server
+
+cargo:
+  - bat
+  - cargo-info
+  - cargo-list
+  - eza
+  - fd-find
+  - ripgrep
+
+manually:
+  - fzf
+  - neovim
+  - omz
+  - rustup
+  - rvm
+  - tmux
