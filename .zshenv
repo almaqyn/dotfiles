@@ -76,7 +76,7 @@ export FZF_ALT_C_COMMAND="${FD_TOOL} ${FD_OPTIONS} --type d"
 # PATH
 pathmunge $HOME/.local/bin
 pathmunge $HOME/.cargo/bin
-#pathmunge $HOME/.rvm/bin
+pathmunge $HOME/.pub-cache/bin
 pathmunge $HOME/tools/flutter/bin
 pathmunge $JAVA_HOME/bin
 pathmunge $ANDROID_HOME/cmdline-tools/latest/bin
