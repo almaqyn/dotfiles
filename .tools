@@ -31,7 +31,10 @@ cargo:
   - cargo-list
   - eza
   - fd-find
+  - jaq
   - ripgrep
+  - tokei
+  - tree-sitter-cli
 
 manually:
   - fzf
